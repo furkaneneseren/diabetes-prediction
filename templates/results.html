@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Diabetes Predictor</title>
+
+	</head>
+
+    <body>
+
+<div class="results">
+		<h1 class="heading">Diabetes Predictor</h1>
+
+			{% if Prediction==1 %}
+				<h1 class="diab">Prediction: <span class='danger'>You have DIABETES.</span></h1>
+					<img class="centered" src="https://www.researchgate.net/profile/Sahar_Ashrafzadeh/publication/327927159/figure/fig1/AS:742875847458818@1554126812273/A-Connected-Virtual-Ecosystem-for-Diabetes-Care.png"/>
+
+			{% elif Prediction==0 %}
+				<h1 class="nodiab">Prediction: <span class='safe'>You DON'T have diabetes.</span></h1>
+			<img class="centered2" src="https://davidsonhearingaids.com/wp-content/uploads/2019/11/diabetes-hearing-loss-and-diet.jpg" />
+			
+			{% endif %}
+		</div>
+
+
+	</body>
+<style>
+
+	.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -306px;
+  margin-left: -379px;
+}
+
+.centered2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -306px;
+  margin-left: -379px;
+}
+
+/* .nodiab {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:400px;
+	height:400px;
+}
+
+.diab {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:400px;
+	height:400px;
+} */
+
+	body{
+	  background-color:rgba(88, 92, 126, 0.514);
+	  }
+
+h1{
+	color:white;
+	text-align:center
+
+	}
+
+div.results{
+ margin: auto;
+  padding: 2px;
+}
+img{
+  display: block;
+  margin-left: 370px;
+  width: 40%;
+
+}
+.diab{
+color:rgb(167, 95, 95);
+}
+.nodiab{
+color:rgb(68, 128, 68)
+}
+</style>
+</html>

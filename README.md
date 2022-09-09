@@ -27,9 +27,9 @@ Today, diabetes is one of the popular, chronic, and deadly diseases for complica
   GET /
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-|  | `index.html` | Submit form for prediction values. |
+| Type     | Description                |
+| :------- | :------------------------- |
+| `index.html` | Submit form for prediction values. |
 
 #### Result Page
 
@@ -37,9 +37,9 @@ Today, diabetes is one of the popular, chronic, and deadly diseases for complica
   POST /predict
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-|       | `results.html` | Diabetes prediciton result page. |
+| Type     | Description                       |
+| :------- | :-------------------------------- |
+| `results.html` | Diabetes prediciton result page. |
 
 
 
